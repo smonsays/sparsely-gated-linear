@@ -1,0 +1,66 @@
+[project]
+name = "hyperlinear"
+version = "0.1.0"
+description = "gatlin"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "array-record>=0.8.1",
+    "backoff>=2.2.1",
+    "chex>=0.1.89",
+    "datasets>=3.6.0",
+    "einops>=0.8.1",
+    "flax>=0.10.6",
+    "grain>=0.2.11",
+    "jax[cuda12]>=0.6.1",
+    "jaxtyping>=0.3.2",
+    "ml-collections>=1.1.0",
+    "multiprocess==0.70.11",
+    "plotly>=6.2.0",
+    "polars>=1.31.0",
+    "pydantic>=2.11.5",
+    "tokenizers>=0.21.1",
+    "transformers>=4.52.4",
+    "typer>=0.24.1",
+    "umap-learn>=0.5.9.post2",
+    "wandb>=0.20.1",
+    "zstandard>=0.25.0",
+]
+
+[tool.uv]
+exclude-newer = "7 days"
+
+[tool.ruff]
+line-length = 90
+indent-width = 2
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    "B",   # flake8-bugbear
+    "F",   # pyflakes
+    "E",   # pycodestyle
+    "I",   # isort
+    "ANN", # flake8 type annotations
+    "RUF", # ruff-specific rules
+]
+fixable = ["ALL"]
+# Add the `line-too-long` rule to the enforced rule set.
+extend-select = ["E501"]
+ignore = ["F722"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[dependency-groups]
+dev = [
+    "tensorflow-datasets>=4.9.9",
+    "ty>=0.0.1a19",
+]

@@ -1,0 +1,17 @@
+method: grid
+metric:
+  goal: minimize
+  name: train_loss
+name: tinystories_sgatlin
+parameters:
+  training_config:
+    values:
+      - configs/tinystories_config.py:sparsely_gated_linear
+  training_config.log_level:
+    value: 1
+  training_config.checkpoint:
+    value: True
+  training_config.seed:
+    values:
+      - 1
+program: train.py

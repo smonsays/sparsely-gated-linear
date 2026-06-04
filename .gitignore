@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache
+
+# C extensions
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.html
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.venv
+.myenv/
+
+# Settings
+.vscode/
+.env
+
+# Logs
+logs/
+wandb/
+
+# Temporary Files
+tmp_*

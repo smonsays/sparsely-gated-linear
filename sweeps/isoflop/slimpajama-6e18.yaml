@@ -1,0 +1,52 @@
+method: grid
+metric:
+  goal: minimize
+  name: train_loss
+name: slimpajama_isoflops-6e18_seq-len-2048
+parameters:
+  training_config:
+    values:
+      - configs/slimpajama_config.py:mlp;5
+      - configs/slimpajama_config.py:mlp;6
+      - configs/slimpajama_config.py:mlp;7
+      - configs/slimpajama_config.py:mlp;8
+      - configs/slimpajama_config.py:sparsely_gated_linear;5
+      - configs/slimpajama_config.py:sparsely_gated_linear;6
+      - configs/slimpajama_config.py:sparsely_gated_linear;7
+      - configs/slimpajama_config.py:sparsely_gated_linear;8
+      - configs/slimpajama_config.py:swiglu;5
+      - configs/slimpajama_config.py:swiglu;6
+      - configs/slimpajama_config.py:swiglu;7
+      - configs/slimpajama_config.py:swiglu;8
+      - configs/slimpajama_config.py:moe;5
+      - configs/slimpajama_config.py:moe;6
+      - configs/slimpajama_config.py:moe;7
+      - configs/slimpajama_config.py:moe;8
+      - configs/slimpajama_config.py:peer;5
+      - configs/slimpajama_config.py:peer;6
+      - configs/slimpajama_config.py:peer;7
+      - configs/slimpajama_config.py:peer;8
+  training_config.flops_budget:
+    value: 6000000000000000000
+  training_config.model.remat:
+    values:
+      - True
+  training_config.dataset.batch_size:
+    values:
+      - 128
+  training_config.dataset.seq_len:
+    values:
+      - 2048
+  training_config.log_every:
+    value: 1000
+  training_config.log_level:
+    value: 1
+  training_config.checkpoint:
+    value: False
+  training_config.seed:
+    values:
+      - 1
+  training_config.dataset.variant:
+    values:
+      - full
+program: train.py

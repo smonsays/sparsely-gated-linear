@@ -1,0 +1,49 @@
+method: grid
+metric:
+  goal: minimize
+  name: train_loss
+name: slimpajama_router-ablation-6e18_seq-len-2048
+parameters:
+  training_config:
+    values:
+      - configs/slimpajama_config.py:sparsely_gated_linear;6
+  training_config.flops_budget:
+    value: 6000000000000000000
+  training_config.model.feedforward_config.router_type:
+    values:
+      - product_key_value
+      - product_dense
+  training_config.model.remat:
+    values:
+      - True
+  training_config.model.n_channels:
+    values:
+      - 8
+  training_config.dataset.batch_size:
+    values:
+      - 128
+  training_config.dataset.seq_len:
+    values:
+      - 2048
+  training_config.optimizer.n_gradient_accumulation:
+    values:
+      - 1
+  training_config.optimizer.warmup_steps:
+    values:
+      - 1000
+  training_config.optimizer.decay_fraction:
+    values:
+      - 0.2
+  training_config.log_every:
+    value: 1000
+  training_config.log_level:
+    value: 1
+  training_config.checkpoint:
+    value: False
+  training_config.seed:
+    values:
+      - 1
+  training_config.dataset.variant:
+    values:
+      - full
+program: train.py
