@@ -91,7 +91,7 @@ uv run --env-file .env evaluate_tinyknowledge.py --ckpt-path <path/to/checkpoint
 
 If you use this code in your research, please cite the paper:
 
-```
+```bibtex
 @article{schug_sgatlin_2026,
   title={Sparsely-gated tiny linear experts}, 
   author={Simon Schug},
