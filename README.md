@@ -18,17 +18,11 @@ WANDB_PROJECT="" # wandb project name
 
 ## Data preparation
 
-You can prepare the training and evaluation datasets using the scripts provided in the `scripts/` directory.
-To convert a Hugging Face dataset (e.g., TinyStories) into ArrayRecord format for training:
+We use [grain](https://github.com/google/grain) for dataloading from ArrayRecord files.
+You can prepare training and evaluation datasets by converting a Hugging Face dataset (e.g., TinyStories) into ArrayRecord format using:
 
 ```bash
 uv run --env-file .env scripts/hf_to_arrayrecord.py --hf_dataset_name roneneldan/TinyStories
-```
-
-To prepare the TinyKnowledge evaluation dataset:
-
-```bash
-uv run --env-file .env scripts/prepare_tinyknowledge_data.py
 ```
 
 ## Training
