@@ -30,7 +30,7 @@ uv run --env-file .env scripts/hf_to_arrayrecord.py --hf_dataset_name roneneldan
 Models are trained using the `train.py` script.
 You can specify the model and dataset configuration from the `configs/` directory.
 
-For example, to train a sparsely-gated linear model on TinyStories:
+For example, to train a sparsely gated linear model on TinyStories:
 
 ```bash
 uv run --env-file .env train.py --training_config="configs/tinystories_config.py:sparsely_gated_linear"
