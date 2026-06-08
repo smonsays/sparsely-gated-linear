@@ -1,6 +1,6 @@
 # Sparsely-gated tiny linear experts
 
-Official code to reproduce experiments in [Sparsely-gated tiny linear experts](https://arxiv.org/abs/xxxx.xxxxx).
+Official code to reproduce experiments in [Sparsely gated tiny linear experts](https://arxiv.org/abs/2606.07414).
 
 ## Setup
 
@@ -87,9 +87,9 @@ If you use this code in your research, please cite the paper:
 
 ```bibtex
 @article{schug_sgatlin_2026,
-  title={Sparsely-gated tiny linear experts}, 
+  title={Sparsely gated tiny linear experts}, 
   author={Simon Schug},
   year={2026},
-  url = {https://arxiv.org/abs/xxxx.xxxxx},
+  url = {https://arxiv.org/abs/2606.07414},
 }
 ```
