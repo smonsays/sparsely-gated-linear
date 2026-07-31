@@ -1,7 +1,7 @@
 <div align="center">
 <h1> Sparsely gated tiny linear experts </h1>
 
-<img src="https://us.aws.cdn.hf.co/xet-bridge-us/6a431232f40782a6fcb8952c/21f39a8bb0afb3dc04e59314b4f907e9cbda34c8c3db47545b5cd5192f610adc?response-content-type=image%2Fpng&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27graphical-abstract.png%3B+filename%3D%22graphical-abstract.png%22%3B&X-Xet-Cas-Uid=public&Expires=1783354498&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNmE0MzEyMzJmNDA3ODJhNmZjYjg5NTJjLzIxZjM5YThiYjBhZmIzZGMwNGU1OTMxNGI0ZjkwN2U5Y2JkYTM0YzhjM2RiNDc1NDViNWNkNTE5MmY2MTBhZGNcXD9yZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcmdXNlcl9pZD1wdWJsaWMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN2dyYXBoaWNhbC1hYnN0cmFjdC5wbmclM0IrZmlsZW5hbWUlM0QlMjJncmFwaGljYWwtYWJzdHJhY3QucG5nJTIyJTNCJlgtWGV0LUNhcy1VaWQ9cHVibGljIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJFcG9jaFRpbWUiOjE3ODMzNTQ0OTh9fX1dfQ__&Signature=MEYCIQDz1GQTblPoUUQKZmI53HgJ8j9fGyk0CbT5MTBbRzqZ1QIhAPn4ojGZ7CMxCEUrUzdjlWYyd42LS9t7z409oaYy9NzU&Key-Pair-Id=01KAYHXK2CBJSW0YZTMNXK9W1M" alt="Graphical Abstract" width="100%"/>
+<img src="https://huggingface.co/spaces/smonsays/sgatlin/resolve/main/assets/graphical-abstract.png" alt="Graphical Abstract" width="100%"/>
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.07414-b31b1b.svg)](https://arxiv.org/abs/2606.07414)
